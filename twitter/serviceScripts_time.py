@@ -21,7 +21,7 @@ def calculateTime(time):
     month = int(time.split('T')[0].split('-')[1])
     year = int(time.split('T')[0].split('-')[0])
     hour = int(time.split('T')[1].split(':')[0])
-    if hour < 4:
+    if hour < 5:
         if day > 1:
             day = day - 1
         else:
@@ -43,3 +43,13 @@ def calculateTime(time):
         return timeNowDay - day <= 7
     else:
         return False
+
+def dateParser(date, time):
+    dateComponents = date.split()
+    if "PM" or "AM" in dateComponents:
+        dateHour  = int(dateComponents[0].split(":")[0])
+        if "PM" in dateComponents:
+            dateHour = dateHour + 12
+    timeHour = int(time.split('T')[1].split(':')[0]) - 5
+    return timeHour == dateHour
+    
