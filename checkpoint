@@ -1,0 +1,2 @@
+model_checkpoint_path: "/Users/khoatran/Documents/mood_recognition/model.tflearn"
+all_model_checkpoint_paths: "/Users/khoatran/Documents/mood_recognition/model.tflearn"
