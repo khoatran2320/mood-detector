@@ -11,17 +11,21 @@ This project attempts to predict the attitude of a social media user based on th
 
 ## To run this application on your computer
 
-### Instagram
+#### Instagram
 
 1. clone the repo
 2. obtain Google Vision API key and credentials from [Google Cloud Console](https://console.cloud.google.com/)
 3. change **InstaBot.py** scrape link to match targeted user
 4. run `python3 insta/InstaBot.py` on terminal
 
-### Twitter
+#### Twitter
 
 1. clone the repo
 2. export your twitter account username and password and make sure they can be retrieved in **twitter/TwitterBot.py**
 3. uncomment the last block of comments in **twitter/wordai.py**
 4. run `python3 twitter/wordai.py` on terminal
 5. you may want to re-train the model with more epochs and/or hidden layers for bettery accuracy. Just uncomment the training code, change the number of epochs and/or hidden layers, and comment the load model code
+
+## Disclaimer
+
+This application was built for personal use only. Data scraping may be unethical so please use with consideration and respect. Only for personal use.
