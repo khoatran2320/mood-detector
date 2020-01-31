@@ -108,8 +108,8 @@ t = TwitterBot()
 t.login()
 t.scrapeTweets()
 t.scrapeMessages()
-print(t.tweets)
-print(t.messages)
+tweets = t.tweets
+messages = t.messages
 
 
 #scrape messages
