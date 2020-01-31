@@ -24,4 +24,4 @@ This project attempts to predict the attitude of a social media user based on th
 2. export your twitter account username and password and make sure they can be retrieved in **twitter/TwitterBot.py**
 3. uncomment the last block of comments in **twitter/wordai.py**
 4. run `python3 twitter/wordai.py` on terminal
-5. you may modify the training model, uncomment the training code
+5. you may modify the training model, just uncomment the training code and comment the load model code
